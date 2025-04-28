@@ -35,4 +35,4 @@
         - pnpm install
         - pnpm run dev
 
-    - The website will be live at '127.0.0.1:300'
+    - The website will be live at '127.0.0.1:3000'
