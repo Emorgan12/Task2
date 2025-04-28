@@ -1,0 +1,427 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root{
+  --primary: #ffffff;
+  --secondary: #1B6527;
+  --text: #008A17;
+}
+
+html, body {
+  background: var(--primary);
+  color: var(--text);
+  font-family: "Roboto Serif", serif;
+  width: 100%;
+}
+
+.body{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+nav, footer{
+  background-color: var(--secondary);
+  color: var(--primary);
+  height: fit-content;
+  padding-right: 30px;
+  font-size: 2.5rem;
+  width: 100%;
+  padding: auto;
+  position: fixed;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+}
+
+nav{
+  top: 0
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#login-button{
+  color: var(--secondary);
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  margin: auto;
+  overflow: scroll;
+}
+
+footer ul{
+  margin: auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  vertical-align: middle;
+  margin: 3rem auto;
+  margin-bottom: 0;
+}
+
+input{
+  background-color: var(--text);
+  margin: 1rem;
+  padding: 1rem;
+  width: 70%;
+  border-radius: 20px;
+  height: 100px;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.container button{
+  background-color: var(--text);
+  color: var(--primary);
+  width: 40%;
+  height: 100px;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+
+.one-line{
+  display: flex
+}
+
+.sign-up input, select{
+  width: 98%;
+}
+
+select{
+  background-color: var(--text);
+  color: var(--primary);
+  border-radius: 20px;
+  height: 100px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.sign-up button, p{
+  margin: auto;
+}
+
+#green button{
+  margin: 1rem;
+  background-color: var(--text);
+  color: var(--primary);
+  width: 40%;
+  height: 13rem;
+  font-size: 4rem;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#green{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.head{
+  margin-left: 1rem;
+}
+
+.subsection{
+  margin-left: 4rem;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.description{
+  font-size: 2rem;
+}
+
+.book-btn{
+  background-color: var(--text);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 20px;
+  width: 500px;
+  height: 80px;
+  font-size: 2rem;
+}
+
+.charger-img{
+  height: 200px;
+}
+
+.user-details p{
+  font-size: 3rem;
+}
+
+.user-details{
+  margin-left: 3rem;
+}
+
+.user-btn{
+  background-color: var(--text);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 20px;
+  width: 40%;
+  height: 80px;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+input:disabled, select:disabled{
+  background-color: #027415;
+}
+
+.user-details select, .user-details input{
+  width: 80%;
+}
+
+.big-btn{
+  background-color: var(--text);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 20px;
+  width: 80%;
+  height: 80px;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+button{
+  background-color: var(--text);
+  color: var(--primary);
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 20px;
+}
+
+.appointment-address-view{
+  margin: 1rem;
+}
+
+.appointment-address-view div{
+  margin: 2rem;
+  background-color: var(--text);
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.appointment-address-view div p{
+  font-size: 3rem;
+}
+
+
+td{
+  padding: 5px;
+  border: var(--primary) 2px solid;
+}
+
+.rc-calendar-my-select a{
+  padding: 5px
+}
+
+.rc-calendar-date-panel{
+  margin: 1rem;
+  background-color: var(--text);
+  color: var(--primary);
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.rc-calendar{
+  width: 100%;
+}
+
+.rc-calendar-disabled-cell{
+  background-color: #1B6527;
+  text-decoration: line-through;
+}
+
+.rc-calendar-footer-btn *{
+  padding: 10px;
+}
+
+.react-time-picker__inputGroup__input{
+  width: 100px;
+}
+
+vaadin-time-picker{
+  width: 100%
+}
+
+select{
+  margin: 1rem;
+  width: 90%;
+}
+
+.appointment-btn{
+  width: 80%;
+  height: 10%;
+}
+
+.address-btn{
+  width: 80%;
+  height: 10%;
+  font-size: 3rem;
+}
+
+p{
+  font-size: 4rem;
+}
+
+.book-div{
+  width: 100%;
+}
+
+.book-div p{
+  font-size: 2rem;
+}
+
+.customer-details form *{
+  width: 100%;
+}
+
+.customer-details div button{
+  width: 100%;
+  margin-right: 100px;
+}
+
+
+.faq *{
+  font-size: 2rem;
+}
+
+.faq div{
+  background-color: var(--text);
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.accessibilty *{
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.accessibilty h1{
+  font-size: 4rem;
+}
+
+@media screen and ( max-width: 1360px) {
+  nav *, footer *{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  nav *, footer *{
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav *, footer *{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+
+  nav , footer {
+    height: 100px
+  }
+
+  .body{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  nav *, footer *{
+    font-size: 1.25rem;
+  }
+
+  img{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  nav *, footer *{
+    font-size: 1rem;
+  }
+
+  img{
+      padding: 5px
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  nav *, footer *{
+    font-size: 0.75rem;
+  }
+
+  img{
+    height: 50px;
+    width: 50px;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+
+  body{
+    padding: 10px 0;
+  }
+
+  .body{
+    margin-top: 80px;
+  }
+
+  nav{
+    height: 80px;
+  }
+
+
+  nav *, footer *{
+    font-size: 0.65rem;
+  }
+}
